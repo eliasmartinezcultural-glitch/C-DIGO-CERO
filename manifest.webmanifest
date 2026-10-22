@@ -1,0 +1,11 @@
+{
+  "name": "CÓDIGO CERO · Ayuda inmediata",
+  "short_name": "CÓDIGO CERO",
+  "description": "Acceso rápido a teléfonos de emergencia y preparación de un pedido de ayuda.",
+  "lang": "es-AR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#102b2a",
+  "theme_color": "#102b2a"
+}
