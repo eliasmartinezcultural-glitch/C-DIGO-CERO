@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102b2a">
+<meta name="description" content="Acceso rápido a teléfonos de emergencia y preparación de un mensaje de ayuda para San Patricio del Chañar.">
+<link rel="manifest" href="manifest.webmanifest">
+<title>CÓDIGO CERO · Ayuda inmediata</title>
+<style>
+:root{color-scheme:dark;--bg:#102b2a;--panel:#1a3b39;--cream:#fff4dc;--muted:#c5d7ce;--red:#d84a3a;--gold:#ffd36e;--green:#9bd6ad}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#28514b 0,var(--bg) 52%);color:var(--cream);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.45}main{max-width:680px;margin:auto;padding:18px 16px 36px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.mark{font-size:.75rem;letter-spacing:.16em;font-weight:900;color:var(--green)}.status{font-size:.75rem;color:var(--muted);border:1px solid #55736c;border-radius:999px;padding:6px 10px}h1{font-size:clamp(2.2rem,9vw,4rem);line-height:.94;letter-spacing:-.06em;margin:25px 0 12px}h1 span{color:var(--gold)}.intro{font-size:1.05rem;color:var(--muted);margin:0 0 22px}.urgent{display:block;width:100%;border:0;border-radius:20px;padding:20px 18px;text-align:left;background:var(--red);color:white;font-size:1.25rem;font-weight:900;box-shadow:0 6px 0 #8d2c24;margin:0 0 15px;cursor:pointer}.urgent small{display:block;font-size:.9rem;font-weight:600;margin-top:4px}.section{margin-top:25px}.section h2{font-size:1.15rem;margin:0 0 12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.call{background:var(--panel);border:1px solid #41645e;color:var(--cream);text-decoration:none;border-radius:16px;padding:15px;min-height:90px;display:flex;flex-direction:column;justify-content:space-between}.call strong{font-size:1.7rem;line-height:1}.call span{font-size:.9rem;color:var(--muted)}.card{background:var(--panel);border:1px solid #41645e;border-radius:18px;padding:16px;margin-top:12px}.label{display:block;font-weight:750;margin:12px 0 6px}input,select,textarea{width:100%;font:inherit;background:#0e2625;color:var(--cream);border:1px solid #65837b;border-radius:12px;padding:13px}textarea{min-height:92px;resize:vertical}.btn{width:100%;border:0;border-radius:13px;padding:15px;background:var(--gold);color:#172b26;font:inherit;font-weight:900;margin-top:12px;cursor:pointer}.btn.secondary{background:#d8e8de}.note{font-size:.88rem;color:var(--muted)}.message{white-space:pre-wrap;background:#0e2625;border:1px dashed #65837b;border-radius:12px;padding:12px;margin-top:12px;overflow-wrap:anywhere}.warning{border-left:4px solid var(--gold);padding:10px 12px;background:#263d34;border-radius:8px;font-size:.9rem}.foot{font-size:.78rem;color:#a9c2b7;margin-top:28px}.hidden{display:none!important}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px}@media(min-width:520px){main{padding:28px 22px 45px}.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<main>
+<div class="top"><div class="mark">CÓDIGO CERO · CHAÑAR</div><div class="status" id="netStatus">Comprobando conexión…</div></div>
+<h1>SI HAY<br><span>PELIGRO,</span><br>ACTUÁ.</h1>
+<p class="intro">Una herramienta sencilla para encontrar ayuda y preparar un mensaje de emergencia. Si hay riesgo inmediato, llamá primero.</p>
+<a class="urgent" href="tel:105">LLAMAR A DEFENSA CIVIL <small>105 · Neuquén</small></a>
+<div class="section">
+<h2>Otros teléfonos de emergencia</h2>
+<div class="grid">
+<a class="call" href="tel:100"><strong>100</strong><span>Bomberos</span></a>
+<a class="call" href="tel:101"><strong>101</strong><span>Policía</span></a>
+<a class="call" href="tel:107"><strong>107</strong><span>Emergencias médicas</span></a>
+<a class="call" href="tel:911"><strong>911</strong><span>Emergencia general*</span></a>
+</div>
+<p class="note">Los números pueden depender de la cobertura y del operador. Si uno no conecta, probá otro número oficial. No esperes a completar este formulario para pedir ayuda.</p>
+</div>
+<div class="section">
+<h2>Preparar un pedido de ayuda</h2>
+<p class="note">Completá lo mínimo. El botón de ubicación puede necesitar permiso del teléfono y, según el dispositivo, conexión. También podés escribir una referencia cercana.</p>
+<div class="card">
+<label class="label" for="type">¿Qué está pasando?</label>
+<select id="type"><option>Riesgo de inundación / agua cerca</option><option>Persona aislada o atrapada</option><option>Emergencia médica</option><option>Incendio</option><option>Necesito evacuación o traslado</option><option>Otra emergencia</option></select>
+<label class="label" for="people">Personas que necesitan ayuda</label>
+<select id="people"><option>1 persona</option><option>2 personas</option><option>3 a 5 personas</option><option>6 o más personas</option><option>No lo sé</option></select>
+<label class="label" for="place">Ubicación o referencia</label>
+<input id="place" autocomplete="street-address" placeholder="Barrio, calle, chacra, picada o referencia">
+<button class="btn secondary" id="gps" type="button">📍 Agregar ubicación del teléfono</button>
+<p id="gpsStatus" class="note" aria-live="polite">La ubicación solo se agrega si el teléfono logra obtenerla.</p>
+<label class="label" for="details">Dato importante (opcional)</label>
+<textarea id="details" placeholder="Ej.: el agua sube, hay niños, persona con movilidad reducida…"></textarea>
+<button class="btn" id="make" type="button">PREPARAR MENSAJE DE AYUDA</button>
+<div id="result" class="hidden" aria-live="polite">
+<div class="message" id="message"></div>
+<button class="btn" id="copy" type="button">COPIAR MENSAJE</button>
+<button class="btn secondary" id="wa" type="button">ABRIR WHATSAPP PARA ENVIAR</button>
+<p class="note">Elegí un contacto o grupo confiable y confirmá que el mensaje se haya enviado. Esta página no lo envía automáticamente ni confirma que alguien lo recibió.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Si estás cerca del río</h2>
+<div class="warning">Alejate de la costa, cauces, canales y zonas anegadas. No cruces agua a pie ni en vehículo. Andá a un lugar alto y seguro si podés hacerlo sin acercarte al agua. Seguí las indicaciones oficiales y no regreses a una zona evacuada.</div>
+</div>
+<div class="section">
+<h2>¿No tenés internet?</h2>
+<p class="note">Después de abrir esta página con conexión, puede quedar disponible sin internet en navegadores compatibles. Sin señal celular ni Wi-Fi, no se pueden enviar mensajes ni consultar información nueva. No reemplaza a Defensa Civil ni a los servicios de emergencia.</p>
+</div>
+<p class="foot">Proyecto comunitario independiente. Verificá siempre las indicaciones con las autoridades. Los teléfonos mostrados son referencias de emergencia publicadas oficialmente; su disponibilidad puede variar. *Comprobá la disponibilidad local de 911.</p>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+function net(){ $('netStatus').textContent=navigator.onLine?'Conexión disponible':'Sin conexión';}
+window.addEventListener('online',net);window.addEventListener('offline',net);net();
+let coords='';
+$('gps').addEventListener('click',()=>{
+ if(!navigator.geolocation){$('gpsStatus').textContent='Este navegador no ofrece ubicación automática. Escribí una referencia.';return;}
+ $('gpsStatus').textContent='Buscando ubicación…';
+ navigator.geolocation.getCurrentPosition(p=>{coords='https://maps.google.com/?q='+p.coords.latitude.toFixed(6)+','+p.coords.longitude.toFixed(6);$('place').value=coords;$('gpsStatus').textContent='Ubicación agregada. Revisá que sea correcta antes de enviarla.';},()=>{$('gpsStatus').textContent='No se pudo obtener ubicación. Escribí barrio, calle, chacra o referencia.';},{enableHighAccuracy:true,timeout:12000,maximumAge:60000});
+});
+function build(){
+ const place=$('place').value.trim()||'Ubicación no especificada';
+ const details=$('details').value.trim()||'Sin más detalles';
+ const msg='PEDIDO DE AYUDA — SAN PATRICIO DEL CHAÑAR\nEmergencia: '+$('type').value+'\nPersonas: '+$('people').value+'\nUbicación/referencia: '+place+'\nDetalle: '+details+'\nNecesito que contacten a los servicios de emergencia y confirmen recepción. Si puedo, llamaré también al 105.';
+ $('message').textContent=msg;$('result').classList.remove('hidden');}
+$('make').addEventListener('click',build);
+$('copy').addEventListener('click',async()=>{const t=$('message').textContent;try{await navigator.clipboard.writeText(t);$('copy').textContent='MENSAJE COPIADO';}catch(e){const r=document.createRange();r.selectNodeContents($('message'));const s=window.getSelection();s.removeAllRanges();s.addRange(r);$('copy').textContent='Seleccioná y copiá el texto';}});
+$('wa').addEventListener('click',()=>{const t=$('message').textContent;window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank','noopener');});
+if('serviceWorker' in navigator && location.protocol.startsWith('http')){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+</script>
+</body>
+</html>
