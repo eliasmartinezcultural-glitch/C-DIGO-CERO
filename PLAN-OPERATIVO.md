@@ -1,5 +1,8 @@
 # CÓDIGO CERO — Plan operativo y arquitectura
 
+## Números oficiales con discrepancia
+El Ministerio de Seguridad de Neuquén publica 103 para Defensa Civil; el sitio de la Policía provincial publica 105. CÓDIGO CERO muestra ambos con una advertencia y no debe ocultar la discrepancia hasta que la autoridad operativa local confirme el canal correcto.
+
 ## Objetivo
 Reducir los pasos entre detectar peligro y comunicar un pedido claro en San Patricio del Chañar y su zona rural cercana. La interfaz debe ser rápida, legible, tolerante a errores y usable con una sola mano.
 
