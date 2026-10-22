@@ -3,7 +3,7 @@
 Herramienta comunitaria estática para San Patricio del Chañar y zonas rurales cercanas (alcance de diseño inicial: aproximadamente 40 km). No es un sistema oficial de despacho.
 
 ## Funciones actuales
-- Botón principal para Defensa Civil de Neuquén: **103** (referencia provincial; verificar en cada difusión).
+- Accesos a **103 y 105**: fuentes oficiales provinciales difieren sobre el número de Defensa Civil (Ministerio de Seguridad publica 103; Policía de Neuquén publica 105). La discrepancia queda visible y debe resolverse con validación local antes de difundir.
 - Acceso directo a 107 (emergencias médicas), 100 (Bomberos) y 101 (Policía).
 - Contactos locales directos separados y etiquetados como pendientes de confirmación: Hospital 0299 485-5084; Comisaría 13.ª 0299 485-5236; Seguridad Ciudadana municipal 0299 458-4229.
 - Selector de tipo de emergencia y sector territorial.
