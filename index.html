@@ -128,7 +128,7 @@ $('gps').addEventListener('click',function(){
   $('gps').disabled=false;
  },{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
 });
-$('lugar').addEventListener('input',function(){if(!coords)$('mapa').href=mapHref();});
+$('lugar').addEventListener('input',function(){coords=null;accuracy=null;$('mapa').href=mapHref();});
 $('sector').addEventListener('change',function(){if(!coords)$('mapa').href=mapHref();});
 function makeMessage(){
  const place=$('lugar').value.trim()||'UBICACIÓN NO PRECISADA';
