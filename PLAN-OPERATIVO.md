@@ -6,6 +6,15 @@ El Ministerio de Seguridad de Neuquén publica 103 para Defensa Civil; el sitio 
 ## Objetivo
 Reducir los pasos entre detectar peligro y comunicar un pedido claro en San Patricio del Chañar y su zona rural cercana. La interfaz debe ser rápida, legible, tolerante a errores y usable con una sola mano.
 
+## Diseño para estrés, discapacidad y poca experiencia digital
+- Una acción principal visible al abrir; no exigir formulario para intentar llamar.
+- Tipografía base grande, contraste alto, áreas táctiles amplias y foco de teclado visible.
+- Modos de letra grande/muy grande, noche de alto contraste, claro y vista simplificada.
+- Guías cortas con pasos numerados para crecida, salud, incendio, ruta, noche/baja visión, menores, poco manejo del celular y necesidad de comunicación por texto.
+- La orientación no reemplaza instrucciones del operador ni servicios de emergencia. Un botón de llamada abre el marcador; no prueba la conexión.
+- No prometer que la página enciende linterna, cambia brillo, detecta cobertura o llama en silencio.
+- En el caso de menores: priorizar adulto seguro/servicios de emergencia y evitar pedir nombre completo, dirección exacta pública o datos personales innecesarios.
+
 ## Capas del sistema
 1. **Interfaz de emergencia:** llamadas telefónicas y advertencias prioritarias; no requiere completar datos.
 2. **Localización voluntaria:** permiso explícito del navegador; muestra coordenadas y precisión aproximada. El usuario puede rechazar el permiso y escribir una referencia.
