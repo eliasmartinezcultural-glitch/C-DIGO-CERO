@@ -21,6 +21,10 @@ Herramienta comunitaria estática para San Patricio del Chañar y zonas rurales 
 
 URL prevista: https://eliasmartinezcultural-glitch.github.io/C-DIGO-CERO/
 
+## Documentación técnica
+- [Plan operativo y arquitectura](PLAN-OPERATIVO.md)
+- [Investigación de conectividad y radiobases](MAPA-CONECTIVIDAD.md)
+
 ## Límites técnicos y de seguridad
 - No se conecta a torres celulares, no puede leer cobertura de operadoras ni activar redes de emergencia.
 - El GPS del navegador requiere permiso y normalmente un contexto seguro HTTPS; puede ser impreciso o no estar disponible.
