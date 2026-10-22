@@ -10,7 +10,7 @@ Reducir los pasos entre detectar peligro y comunicar un pedido claro en San Patr
 - Una acción principal visible al abrir; no exigir formulario para intentar llamar.
 - Tipografía base grande, contraste alto, áreas táctiles amplias y foco de teclado visible.
 - Modos de letra grande/muy grande, noche de alto contraste, claro y vista simplificada.
-- Guías cortas con pasos numerados para crecida, salud, incendio, ruta, noche/baja visión, menores, poco manejo del celular y necesidad de comunicación por texto.
+- Guías cortas con pasos numerados para crecida/agua, salud, incendio, ruta/picada, noche/baja visión, menores, poco manejo del celular, necesidad de comunicación por texto, amenazas por otra persona, cables caídos/riesgo eléctrico y personas con movilidad reducida.
 - La orientación no reemplaza instrucciones del operador ni servicios de emergencia. Un botón de llamada abre el marcador; no prueba la conexión.
 - No prometer que la página enciende linterna, cambia brillo, detecta cobertura o llama en silencio.
 - En el caso de menores: priorizar adulto seguro/servicios de emergencia y evitar pedir nombre completo, dirección exacta pública o datos personales innecesarios.
