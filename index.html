@@ -20,7 +20,7 @@
 <p class="lead">Si hay peligro, no llenes formularios. Tocá el botón de llamada. Si no sabés qué hacer, usá una de las ayudas de abajo.</p>
 
 <a class="urgent" href="tel:103" aria-label="Intentar llamar al 103, número publicado por el Ministerio de Seguridad provincial">☎ TOCÁ PARA LLAMAR · 103 <small>Defensa Civil según el Ministerio de Seguridad provincial. Si no conecta, probá 105 u otro canal oficial.</small></a>
-<div class="grid" aria-label="Llamadas de emergencia">
+<div class="grid" id="llamadas" aria-label="Llamadas de emergencia">
 <a class="call" href="tel:105"><span class="num">105</span><span><b>Defensa Civil / ambiental</b><small>Número publicado por Policía provincial; confirmar</small></span></a>
 <a class="call" href="tel:107"><span class="num">107</span><span><b>Emergencia médica</b><small>Salud</small></span></a>
 <a class="call" href="tel:100"><span class="num">100</span><span><b>Bomberos</b><small>Incendio y rescate</small></span></a>
@@ -153,7 +153,7 @@ function showGuide(key){
 }
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>showGuide(b.dataset.mode)));
 $('guiaCerrar').addEventListener('click',()=>$('guia').classList.add('hidden'));
-$('guiaLlamar').addEventListener('click',()=>$('tipo').focus());
+$('guiaLlamar').addEventListener('click',()=>$('llamadas').scrollIntoView({behavior:'auto',block:'start'}));
 $('letra').addEventListener('click',()=>{document.body.classList.add('large');document.body.classList.remove('xlarge')});
 $('maxletra').addEventListener('click',()=>{document.body.classList.add('xlarge');document.body.classList.remove('large')});
 $('noche').addEventListener('click',()=>document.body.classList.add('night'));
