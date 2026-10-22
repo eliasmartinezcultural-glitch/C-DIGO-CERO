@@ -1,40 +1,49 @@
 # CÓDIGO CERO · Ayuda inmediata
 
-Primera versión comunitaria de una página ligera para San Patricio del Chañar, Neuquén.
+Herramienta comunitaria estática para San Patricio del Chañar y zonas rurales cercanas (alcance de diseño inicial: aproximadamente 40 km). No es un sistema oficial de despacho.
 
-## Qué incluye
-- Botón principal para llamar a Defensa Civil (105).
-- Accesos telefónicos a Bomberos (100), Policía (101), emergencias médicas (107) y 911.
-- Formulario corto para preparar un pedido de ayuda.
-- Ubicación del teléfono cuando el navegador la permite.
-- Copiar el texto o abrir WhatsApp con el mensaje preparado.
-- Caché básica para que la página pueda volver a abrirse sin conexión después de haber cargado correctamente.
+## Funciones actuales
+- Botón principal para Defensa Civil de Neuquén: **103** (referencia provincial; verificar en cada difusión).
+- Acceso directo a 107 (emergencias médicas), 100 (Bomberos) y 101 (Policía).
+- Contactos locales directos separados y etiquetados como pendientes de confirmación: Hospital 0299 485-5084; Comisaría 13.ª 0299 485-5236; Seguridad Ciudadana municipal 0299 458-4229.
+- Selector de tipo de emergencia y sector territorial.
+- Ubicación del navegador si el usuario la autoriza, con precisión aproximada y enlace de mapa.
+- Mensaje corto para copiar, compartir o abrir WhatsApp.
+- Service worker para volver a abrir la página después de haberla cargado con conexión.
+- Diseño adaptable a celular, tableta y computadora, con botones grandes y controles accesibles.
 
-## Límites importantes
-- **No envía mensajes automáticamente.** WhatsApp se abre con el texto preparado; la persona debe elegir destinatario y enviar.
-- **No confirma recepción ni despacha ayuda.**
-- Sin conexión celular ni Wi-Fi no puede llamar por internet, enviar WhatsApp ni actualizar datos. Los enlaces telefónicos requieren una red de telefonía compatible.
-- La ubicación puede fallar, ser imprecisa o requerir permiso. Siempre revisá la referencia.
-- La caché offline depende del navegador, almacenamiento disponible y de que la página haya cargado con conexión previamente.
-- Esta herramienta no reemplaza a los servicios oficiales, alertas ni instrucciones de evacuación.
+## Activar GitHub Pages
+1. Abrí **Settings** del repositorio.
+2. Entrá en **Pages**.
+3. En **Build and deployment**, elegí **Deploy from a branch**.
+4. Seleccioná la rama `main` y la carpeta `/ (root)`.
+5. Guardá y esperá a que GitHub publique el sitio.
 
-## Publicar en GitHub Pages
-1. Abrí Settings del repositorio.
-2. Entrá en Pages.
-3. En Build and deployment, elegí Deploy from a branch.
-4. Seleccioná la rama `main` y la carpeta `/ (root)`; guardá.
-5. Esperá a que GitHub publique el sitio. La dirección habitual será:
-   `https://eliasmartinezcultural-glitch.github.io/C-DIGO-CERO/`
+URL prevista: https://eliasmartinezcultural-glitch.github.io/C-DIGO-CERO/
 
-## Antes de difundir
-1. Probar todos los enlaces telefónicos en teléfonos reales.
-2. Confirmar con autoridades locales qué números y canales deben mostrarse.
-3. Acordar un número o canal real para recibir mensajes de vecinos, con responsables y cobertura. No publiques un contacto personal sin consentimiento.
-4. Probar en Android, iPhone y netbook, con conexión y en modo avión después de cargar la página.
-5. Revisar el contenido con Defensa Civil o el área municipal competente.
+## Límites técnicos y de seguridad
+- No se conecta a torres celulares, no puede leer cobertura de operadoras ni activar redes de emergencia.
+- El GPS del navegador requiere permiso y normalmente un contexto seguro HTTPS; puede ser impreciso o no estar disponible.
+- Los enlaces `tel:` abren el marcador del dispositivo; no garantizan que la llamada conecte. La posibilidad de llamada de emergencia sin saldo depende de la red y el operador.
+- WhatsApp se abre con un texto preparado. La persona debe elegir destinatario y enviar; no existe recepción ni confirmación automática.
+- No hay central de monitoreo, base de datos, notificaciones push, despacho ni rastreo de personas.
+- Sin señal de telefonía y sin Wi-Fi no se puede garantizar llamada ni envío. Los mapas externos necesitan conexión.
+- La caché offline depende del navegador, almacenamiento y de que la página haya cargado previamente. No sustituye mapas offline descargados ni un plan de evacuación.
+- El radio de 40 km es una prioridad de diseño, no una geocerca ni garantía de cobertura.
+- No se deben publicar refugios, rutas de evacuación, puntos de reunión o números personales sin validación de las autoridades responsables.
 
-## Seguridad comunitaria
-En una emergencia inmediata, intentá llamar al servicio oficial. Cerca del río, alejate de la costa, canales y zonas anegadas; no cruces agua a pie ni en vehículo; buscá un lugar alto y seguro solo si podés llegar sin exponerte y seguí las indicaciones oficiales.
+## Antes de difundir a la comunidad
+1. **Validación institucional:** pedir revisión a Defensa Civil municipal/provincial, hospital, Policía y Bomberos.
+2. **Verificar teléfonos:** llamar en horario apropiado a cada institución para confirmar número, nombre del servicio y disponibilidad. En particular, validar los contactos directos mostrados en la web.
+3. **Canal real de recepción:** acordar un teléfono/WhatsApp institucional atendido, quién responde, horarios, suplencias, privacidad y qué hacer si no se recibe el mensaje. Publicarlo solo con autorización.
+4. **Prueba de dispositivos:** Android, iPhone y computadora; pantalla chica, texto grande, teclado, GPS permitido/denegado y conexión lenta.
+5. **Prueba offline:** cargar online, abrir de nuevo en modo avión y comprobar qué queda accesible. Confirmar que la interfaz no sugiera que se puede enviar sin señal.
+6. **Prueba de emergencia simulada:** nunca probar con llamadas reales a números de emergencia; validar enlaces con los organismos de manera coordinada.
+7. **Revisión territorial:** validar nombres de barrios, chacras, picadas, accesos y referencias con gente que conoce la zona.
+8. **Responsable de mantenimiento:** definir quién revisa los teléfonos, enlaces y mensajes oficiales, y con qué frecuencia.
+
+## Seguridad junto al río
+Alejarse de la costa, canales y zonas anegadas. No cruzar agua a pie ni en vehículo. Buscar un lugar alto y seguro únicamente si se puede llegar sin exponerse. Seguir instrucciones oficiales.
 
 ## Estado
-Prototipo inicial. No está conectado a un centro de recepción de emergencias y no debe presentarse como sistema oficial ni como garantía de rescate.
+Prototipo mejorado. No es oficial ni está conectado a un centro de recepción. No presentarlo como servicio de rescate ni como garantía de ayuda hasta que los organismos validen el contenido y exista un canal de recepción probado.
