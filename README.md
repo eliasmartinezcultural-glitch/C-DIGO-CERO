@@ -21,6 +21,12 @@ Herramienta comunitaria estática para San Patricio del Chañar y zonas rurales 
 
 URL prevista: https://eliasmartinezcultural-glitch.github.io/C-DIGO-CERO/
 
+## Modos de accesibilidad y orientación
+- Botones de orientación para agua/río, salud, incendio, ruta/picada, noche/baja visión, menores, uso sencillo del teléfono y situaciones en que la persona no puede hablar.
+- Controles para letra grande y muy grande, modo de alto contraste nocturno, modo claro, vista simplificada y restablecer.
+- Accesos de llamada visibles desde el inicio; el GPS no es obligatorio.
+- El texto se prepara localmente y solo se comparte cuando la persona lo decide.
+
 ## Documentación técnica
 - [Plan operativo y arquitectura](PLAN-OPERATIVO.md)
 - [Investigación de conectividad y radiobases](MAPA-CONECTIVIDAD.md)
