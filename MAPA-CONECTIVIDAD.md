@@ -1,5 +1,8 @@
 # Investigación de conectividad — CÓDIGO CERO
 
+## Nota de verificación de emergencias
+Las fuentes oficiales provinciales consultadas discrepan en el número de Defensa Civil: el Ministerio de Seguridad publica 103, mientras que el sitio de la Policía de Neuquén publica 105. La web incluye ambos accesos y pide confirmación local. No presentar uno como universalmente confirmado hasta que la autoridad operativa local lo resuelva.
+
 ## Para qué sirve
 Documentar fuentes públicas para estudiar cobertura y radiobases alrededor de San Patricio del Chañar y orientar una futura coordinación con operadores y organismos. Esta investigación no certifica la cobertura real de cada picada ni permite conectar la web a una torre.
 
