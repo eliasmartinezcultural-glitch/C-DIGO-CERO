@@ -25,7 +25,7 @@
 <a class="call" href="tel:100"><span class="num">100</span><span><b>Bomberos</b><small>Incendio y rescate</small></span></a>
 <a class="call" href="tel:101"><span class="num">101</span><span><b>Policía</b><small>Emergencia policial</small></span></a>
 </div>
-<p class="note">La conexión depende del teléfono y del operador. No podemos garantizar que una llamada conecte. Si no entra, intentá otro canal oficial disponible. No uses WhatsApp como sustituto de una llamada urgente.</p>
+<p class="note">La conexión depende del teléfono y del operador. Este indicador no mide la intensidad de señal ni garantiza acceso a internet o a emergencias. Si no entra, intentá otro canal oficial disponible. No uses WhatsApp como sustituto de una llamada urgente.</p>
 
 <section class="section" aria-labelledby="directos">
 <h2 id="directos">Contactos directos locales</h2>
@@ -110,7 +110,7 @@ No reemplaza emergencias, alertas, evacuaciones ni instrucciones de las autorida
 'use strict';
 const $=id=>document.getElementById(id);
 let coords=null,accuracy=null;
-function net(){ $('netStatus').textContent=navigator.onLine?'Conexión disponible':'Sin conexión'; }
+function net(){ $('netStatus').textContent=navigator.onLine?'Red detectada':'Sin red detectada'; }
 window.addEventListener('online',net);window.addEventListener('offline',net);net();
 function mapHref(){return coords?'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(coords.lat+','+coords.lon):'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent($('lugar').value.trim()||$('sector').value+', San Patricio del Chañar, Neuquén');}
 $('gps').addEventListener('click',function(){
